@@ -10,9 +10,8 @@ import Foundation
 
 class Weapon: Item {
     
-    
     convenience override init(name: String, value: Int, attackBoost: Int, damageProtection: Int) {
-        <#code#>
+        self.init(name: name, value: value, attackBoost: attackBoost, damageProtection: damageProtection)
     }
     
 }
