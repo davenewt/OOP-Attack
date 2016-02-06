@@ -12,6 +12,12 @@
 		63E9A9141C638120007D82A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E9A9121C638120007D82A8 /* Main.storyboard */; };
 		63E9A9161C638120007D82A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E9A9151C638120007D82A8 /* Assets.xcassets */; };
 		63E9A9191C638120007D82A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E9A9171C638120007D82A8 /* LaunchScreen.storyboard */; };
+		63E9A9211C639CD0007D82A8 /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A9201C639CD0007D82A8 /* character.swift */; };
+		63E9A9231C63A12C007D82A8 /* weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A9221C63A12C007D82A8 /* weapon.swift */; };
+		63E9A9251C63A15B007D82A8 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A9241C63A15B007D82A8 /* item.swift */; };
+		63E9A9271C63AFDE007D82A8 /* armour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A9261C63AFDE007D82A8 /* armour.swift */; };
+		63E9A9291C63B001007D82A8 /* spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A9281C63B001007D82A8 /* spell.swift */; };
+		63E9A92B1C63B01E007D82A8 /* loot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E9A92A1C63B01E007D82A8 /* loot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		63E9A9151C638120007D82A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E9A9181C638120007D82A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E9A91A1C638120007D82A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E9A9201C639CD0007D82A8 /* character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
+		63E9A9221C63A12C007D82A8 /* weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weapon.swift; sourceTree = "<group>"; };
+		63E9A9241C63A15B007D82A8 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		63E9A9261C63AFDE007D82A8 /* armour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = armour.swift; sourceTree = "<group>"; };
+		63E9A9281C63B001007D82A8 /* spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spell.swift; sourceTree = "<group>"; };
+		63E9A92A1C63B01E007D82A8 /* loot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				63E9A9151C638120007D82A8 /* Assets.xcassets */,
 				63E9A9171C638120007D82A8 /* LaunchScreen.storyboard */,
 				63E9A91A1C638120007D82A8 /* Info.plist */,
+				63E9A9201C639CD0007D82A8 /* character.swift */,
+				63E9A9221C63A12C007D82A8 /* weapon.swift */,
+				63E9A9241C63A15B007D82A8 /* item.swift */,
+				63E9A9261C63AFDE007D82A8 /* armour.swift */,
+				63E9A9281C63B001007D82A8 /* spell.swift */,
+				63E9A92A1C63B01E007D82A8 /* loot.swift */,
 			);
 			path = "OOP Attack";
 			sourceTree = "<group>";
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E9A9211C639CD0007D82A8 /* character.swift in Sources */,
+				63E9A9231C63A12C007D82A8 /* weapon.swift in Sources */,
+				63E9A9251C63A15B007D82A8 /* item.swift in Sources */,
+				63E9A92B1C63B01E007D82A8 /* loot.swift in Sources */,
 				63E9A9111C638120007D82A8 /* ViewController.swift in Sources */,
 				63E9A90F1C638120007D82A8 /* AppDelegate.swift in Sources */,
+				63E9A9291C63B001007D82A8 /* spell.swift in Sources */,
+				63E9A9271C63AFDE007D82A8 /* armour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

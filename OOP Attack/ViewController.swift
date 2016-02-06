@@ -10,6 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var player2man: UIImageView!
+    
+    @IBOutlet weak var player1ogre: UIImageView!
+    
+    @IBOutlet weak var outputLbl: UILabel!
+    
+    @IBAction func player1AttackBtnPressed(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func player2AttackBtnPressed(sender: AnyObject) {
+        
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
