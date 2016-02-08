@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLbl: UILabel!
     @IBOutlet weak var player1HpLbl: UILabel!
     @IBOutlet weak var player2HpLbl: UILabel!
+    @IBOutlet weak var playAgainBtn: UIButton!
     
     @IBAction func player1AttackBtnPressed(sender: UIButton!) {
         print("Player 1 Attack Button Pressed")
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
                 player2man.hidden = true;
                 outputLbl.text = "\(player2.name) is outta here!"
                 player2HpLbl.text = "\(player2.name): x-x"
-
+                playAgainBtn.hidden = false
             }
         }
         
@@ -40,23 +41,37 @@ class ViewController: UIViewController {
         print("Player 2 Attack Button Pressed")
     }
     
+    @IBAction func playAgainPressed(sender: AnyObject) {
+        
+        initialiseGame()
+        
+    }
+    
+    
     var player1: Character!
     var player2: Character!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        initialiseGame()
+
+    
+    }
+
+    func initialiseGame() {
         player1 = Character(name: "David", startingHp: 120, cash: 100, attackPower: 20)
         player2 = Character(name: "Bea", startingHp: 100, cash: 80, attackPower: 22)
         
         player1HpLbl.text = "\(player1.name): \(player1.hp) HP"
         player2HpLbl.text = "\(player2.name): \(player2.hp) HP"
         
-        
-
-    
+        playAgainBtn.hidden = true
+        player1ogre.hidden = false
+        player2man.hidden = false
     }
-
+    
 
 }
 

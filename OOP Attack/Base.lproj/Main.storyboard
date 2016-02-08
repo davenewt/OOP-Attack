@@ -114,6 +114,19 @@
                                 <color key="shadowColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kv-NB-s8y" userLabel="playAgainBtn">
+                                <rect key="frame" x="251" y="159" width="165" height="58"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.79607843137254897" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KH5-nC-dIb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,6 +171,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="outputLbl" destination="l78-w8-GsE" id="hcu-YM-uzX"/>
+                        <outlet property="playAgainBtn" destination="4Kv-NB-s8y" id="9fQ-lb-fBz"/>
                         <outlet property="player1HpLbl" destination="nms-Kf-SLn" id="h24-zL-sxt"/>
                         <outlet property="player1ogre" destination="ZgQ-FR-fZk" id="POU-Ky-Oqt"/>
                         <outlet property="player2HpLbl" destination="je2-5F-cGK" id="xdA-TJ-tWk"/>
