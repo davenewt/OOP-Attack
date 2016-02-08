@@ -81,9 +81,10 @@ class Character {
         // we won't give new characters any: weapons, armour or loot on init
     }
     
-    func attemptAttack(attackPower: Int) -> Bool {
+    func attacked(attackPower: Int) -> Bool {
         self._hp -= attackPower
-        return true
+        print("Attack Successful: Opponent HP now \(self._hp)")
+        return true // by default, attacks will be successful
     }
     
     var isAlive: Bool {
@@ -94,6 +95,14 @@ class Character {
                 return true
             }
         }
+    }
+    
+    func dropLoot() -> String? {
+        if !isAlive {
+            print("Died!")
+            return("Loot needs to go here")
+        }
+        return nil
     }
     
 }
